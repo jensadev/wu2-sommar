@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Min sommar</title>
   <style>
+    body {
+      font-family: system-ui, sans-serif;
+      font-size: 1.2rem;
+    }
     .container {
-      width: 80%;
+      max-width: 80ch;
       margin: 0 auto;
     }
     img {
@@ -22,12 +26,19 @@
       margin-block-start: var(--flow-space, 1em);
     }
 
+    .input-group {
+      --flow-space: .5em;  
+    }
     input {
       width: 100%;
       padding: 0.5em;
       font-size: 1em;
       border: 1px solid #ccc;
       border-radius: 0.5em;
+    }
+
+    main {
+      padding-bottom: 4rem;
     }
   </style>
 </head>
@@ -40,10 +51,14 @@
     <p>Fyll i de tommar raderna för att berätta om hur din sommar varit. När du skrivit klart får du läsa upp din
       sommarberättelse för en kamrat. Kanske någon vågar läsa upp berättelsen för hela klassen?</p>
     <img src="solbild.jpg" alt="Fin bild på solen">
-    <label for="boring">Det absolut tråkigast jag gjort i sommar var</label>
-    <input id="boring" type="text" placeholder="att joxa med vår förbannade bil">
-    <label for="fun">men jag har också gjort en rolig grej och det var</label>
-    <input id="fun" type="text" placeholder="att gå på Tool konsert i Stockholm">
+    <div class="input-group flow">
+      <label for="boring">Det absolut tråkigast jag gjort i sommar var</label>
+      <input id="boring" type="text" placeholder="att joxa med vår förbannade bil">
+    </div>
+    <div class="input-group flow">
+      <label for="fun">men jag har också gjort en rolig grej och det var</label>
+      <input id="fun" type="text" placeholder="att gå på Tool konsert i Stockholm">
+    </div>
   </main>
 </body>
 
