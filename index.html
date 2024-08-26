@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Min sommar</title>
   <style>
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
     img {
       width: 100%;
       height: 50vh;
@@ -13,22 +17,33 @@
       object-position: center;
       aspect-ratio: 16/9;
     }
+
+    .flow>*+* {
+      margin-block-start: var(--flow-space, 1em);
+    }
+
+    input {
+      width: 100%;
+      padding: 0.5em;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 0.5em;
+    }
   </style>
 </head>
 
 <body>
-  <main class="container">
+  <main class="container flow">
 
     <h1>Min sommarberättelse</h1>
+
+    <p>Fyll i de tommar raderna för att berätta om hur din sommar varit. När du skrivit klart får du läsa upp din
+      sommarberättelse för en kamrat. Kanske någon vågar läsa upp berättelsen för hela klassen?</p>
     <img src="solbild.jpg" alt="Fin bild på solen">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quia in sit magnam vel impedit quis optio ratione
-      harum repellendus voluptates repellat praesentium ipsum, officiis aperiam, sed molestias velit itaque!</p>
-    <p>Alias delectus expedita nisi accusantium dolorum adipisci omnis, consequatur nesciunt laboriosam aliquam a earum
-      nobis. Sint tenetur, fugit praesentium minus facere quisquam saepe consequatur vel, deleniti quia fuga accusantium
-      modi!</p>
-    <p>Perspiciatis voluptatem dicta laudantium tenetur aliquam. Culpa unde est sint expedita numquam magni minima quia
-      tenetur debitis, consequuntur, laborum obcaecati pariatur modi suscipit illo ipsam ipsa consequatur. Eius, nihil
-      optio.</p>
+    <label for="boring">Det absolut tråkigast jag gjort i sommar var</label>
+    <input id="boring" type="text" placeholder="att joxa med vår förbannade bil">
+    <label for="fun">men jag har också gjort en rolig grej och det var</label>
+    <input id="fun" type="text" placeholder="att gå på Tool konsert i Stockholm">
   </main>
 </body>
 
