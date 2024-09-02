@@ -50,6 +50,9 @@ img {
 nav > ul {
   list-style: none;
   display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
   gap: 1rem;
   font-weight: 500;
   font-size: 1.4rem;
