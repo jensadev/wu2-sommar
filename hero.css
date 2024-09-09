@@ -1,0 +1,33 @@
+img {
+  max-width: 100%;
+}
+body,html {
+  margin: 0;
+}
+.hero {
+  position: relative;
+  > * {
+    position: absolute;
+  }
+  .overlay {
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  h1 {
+    color: white;
+    font-family: fantasy;
+    font-size: 6rem;
+  }
+  img {
+    top: 0;
+    left: 0;
+    aspect-ratio: 16/9;
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
